@@ -1,0 +1,20 @@
+﻿<Window x:Class="Dolgozat.EditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dolgozat"
+        mc:Ignorable="d"
+        Title="Szerkesztés" Height="200" Width="150">
+    <Grid>
+        <Label Content="Cím" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="titleTextBox" HorizontalAlignment="Left" Margin="10,36,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        
+        <Label Content="Műfaj" HorizontalAlignment="Left" Margin="10,59,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="genreComboBox" HorizontalAlignment="Left" Margin="10,90,0,0" VerticalAlignment="Top" Width="120"/>
+        
+        <Button x:Name="saveButton" Content="Mentés" HorizontalAlignment="Left" Margin="87,134,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="backButton" Content="Mégse" HorizontalAlignment="Left" Margin="10,134,0,0" VerticalAlignment="Top" Click="backButton_Click"/>
+
+    </Grid>
+</Window>
